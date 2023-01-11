@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator dark">
+        <div class="theme-toggler active">
+          <i class="toggler-icon"></i>
+        </div>
+        <div class="display-screen">
+          <div id="display"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('c')"
+                  id="clear"
+                >
+                  C
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('/')"
+                  id="/"
+                >
+                  &divide;
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('*')"
+                  id="*"
+                >
+                  &times;
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('backspace')"
+                  id="backspace"
+                >
+                  CE
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn-number" onclick="numericButton(7)" id="7">
+                  7
+                </button>
+              </td>
+              <td>
+                <button class="btn-number" onclick="numericButton(8)" id="8">
+                  8
+                </button>
+              </td>
+              <td>
+                <button class="btn-number" onclick="numericButton(9)" id="9">
+                  9
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('-')"
+                  id="-"
+                >
+                  -
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn-number" onclick="numericButton(4)" id="4">
+                  4
+                </button>
+              </td>
+              <td>
+                <button class="btn-number" onclick="numericButton(5)" id="5">
+                  5
+                </button>
+              </td>
+              <td>
+                <button class="btn-number" onclick="numericButton(6)" id="6">
+                  6
+                </button>
+              </td>
+              <td>
+                <button
+                  class="btn-operator"
+                  onclick="operationButton('+')"
+                  id="+"
+                >
+                  +
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn-number" onclick="numericButton(1)" id="1">
+                  1
+                </button>
+              </td>
+              <td>
+                <button class="btn-number" onclick="numericButton(2)">2</button>
+              </td>
+              <td>
+                <button class="btn-number" id="3" onclick="numericButton(3)">
+                  3
+                </button>
+              </td>
+              <td rowspan="2">
+                <button
+                  class="btn-equal"
+                  onclick="operationButton('=')"
+                  id="equal"
+                >
+                  =
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="btn-operator" id="(">(</button></td>
+              <td>
+                <button class="btn-number" id="0" onclick="numericButton(0)">
+                  0
+                </button>
+              </td>
+              <td><button class="btn-operator" id=")">)</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
